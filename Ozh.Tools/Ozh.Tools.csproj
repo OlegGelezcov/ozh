@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{313A0811-ABDB-4351-BD3A-853A52644546}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ozh.Tools</RootNamespace>
+    <AssemblyName>Ozh.Tools</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\Program Files\Unity_2018_3\Editor\Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dotnet\StringBuilderExtensions.cs" />
+    <Compile Include="Functional\Date.cs" />
+    <Compile Include="Functional\ActionExt.cs" />
+    <Compile Include="Functional\Decimal.cs" />
+    <Compile Include="Functional\DictionaryExt.cs" />
+    <Compile Include="Functional\Double.cs" />
+    <Compile Include="Functional\Either.cs" />
+    <Compile Include="Functional\EmptyList.cs" />
+    <Compile Include="Functional\Enum.cs" />
+    <Compile Include="Functional\EnumerableExt.cs" />
+    <Compile Include="Functional\Error.cs" />
+    <Compile Include="Functional\Exceptional.cs" />
+    <Compile Include="Functional\F.cs" />
+    <Compile Include="Functional\FuncExt.cs" />
+    <Compile Include="Functional\Identity.cs" />
+    <Compile Include="Functional\Immutable.cs" />
+    <Compile Include="Functional\Int.cs" />
+    <Compile Include="Functional\Long.cs" />
+    <Compile Include="Functional\NoneType.cs" />
+    <Compile Include="Functional\Option.cs" />
+    <Compile Include="Functional\String.cs" />
+    <Compile Include="Functional\Try.cs" />
+    <Compile Include="Functional\TupleExt.cs" />
+    <Compile Include="Functional\Validation.cs" />
+    <Compile Include="IoC\IContainer.cs" />
+    <Compile Include="IoC\IObjectBuilder.cs" />
+    <Compile Include="IoC\IoCContainer.cs" />
+    <Compile Include="IoC\ObjectBuilder.cs" />
+    <Compile Include="IoC\ObjectLifecycle.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

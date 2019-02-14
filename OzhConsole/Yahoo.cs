@@ -1,4 +1,4 @@
-﻿using LaYumba.Functional;
+﻿
 using System.Net.Http;
 using static System.Console;
 
@@ -11,7 +11,5 @@ namespace OzhConsole {
             return decimal.Parse(request.Result.Trim());
         }
 
-        public static Try<decimal> TryGetRate(string ccyPair)
-            => () => GetRate(ccyPair);
     }
 }

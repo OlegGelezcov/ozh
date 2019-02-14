@@ -10,3 +10,6 @@ C:\development\VisualStudio\OZH\Ozh.Tools\obj\Debug\Ozh.Tools.csprojAssemblyRefe
 C:\development\VisualStudio\OZH\Ozh.Tools\obj\Debug\Ozh.Tools.csproj.CoreCompileInputs.cache
 C:\development\VisualStudio\OZH\Ozh.Tools\obj\Debug\Ozh.Tools.dll
 C:\development\VisualStudio\OZH\Ozh.Tools\obj\Debug\Ozh.Tools.pdb
+C:\development\VisualStudio\OZH\Ozh.Tools\bin\Debug\UnityEngine.dll
+C:\development\VisualStudio\OZH\Ozh.Tools\bin\Debug\UnityEngine.xml
+C:\development\VisualStudio\OZH\Ozh.Tools\obj\Debug\Ozh.Tools.csproj.CopyComplete

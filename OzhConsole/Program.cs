@@ -10,41 +10,7 @@ namespace OzhConsole {
     class Program {
 
         static void Main(string[] args) {
-
-            /*
-            var oneSec = TimeSpan.FromSeconds(1);
-            IObservable<long> ticks = Observable.Interval(oneSec);
-            ticks.Trace("ticks");
-            ReadLine();*/
-
-            /*
-            var inputs = new Subject<string>();
-            using(inputs.Trace("inputs")) {
-                for(string input; (input = ReadLine()) != "q";) {
-                    inputs.OnNext(input);
-                }
-                inputs.OnCompleted();
-            }*/
-
-            /*
-            IObservable<string> justHello = Observable.Return("hello");
-            justHello.Trace("justHEllo");*/
-
-            /*
-            Observable.FromAsync(() => GetRate()).Trace("singleUsdEur");
-            ReadLine();*/
-
-            /*
-            IEnumerable<char> e = new[] { 'a', 'b', 'c' };
-            IObservable<char> chars = e.ToObservable();
-            chars.Trace("chars");
-            ReadLine();*/
-
-            var oneSec = TimeSpan.FromSeconds(1);
-            var ticks = Observable.Interval(oneSec);
-
-            ticks.Select(n => n * 10).Trace("ticksX10");
-            ReadKey();
+            new ContainerTests().Install();
         }
 
         static async Task<int> GetRate() {
